@@ -1,0 +1,19 @@
+{
+  "name": "sim-game",
+  "version": "1.0.0",
+  "description": "Sim paper and pencil game",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "test-coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dejavu1987/sim"
+  },
+  "homepage": "https://github.com/dejavu1987/sim#readme",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
