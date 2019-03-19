@@ -4,3 +4,7 @@
 Paper and pencil game on web
 
 WIP
+
+## Features
+
+Class to take care of all the game's behaviors.
