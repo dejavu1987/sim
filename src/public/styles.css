@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+form {
+    background: #ccc;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+}
+
+form input {
+    border: 0;
+    padding: 10px;
+    margin-right: 4px;
+    flex-grow: 1;
+}
+
+form button {
+    background: rgb(130, 224, 255);
+    border: none;
+    padding: 20px 30px;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 15vh;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    position: fixed;
+    width: 100%;
+    bottom: 58px;
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+    background: #eee;
+}
+
+#player-select {
+    display: flex;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+#player-select button {
+    width: 49%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline;
+}
+
+.playerA .playerBg, button.playerA, .playerA #player-select {
+    background: palevioletred;
+    color: #fff;
+}
+
+.playerB .playerBg, button.playerB, .playerB #player-select {
+    background: dodgerblue;
+    color: #fff;
+}
+
+.spectator .playerBg, button.spectator, .spectator #player-select {
+    background: sandybrown;
+    color: #fff;
+}
+
+.moves button {
+    width: 30%;
+    padding: 5%;
+    margin: 1%;
+}
+
+.moves g g {
+    mix-blend-mode: normal;
+}
+
+.moves {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.moves svg {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.moves path {
+    fill: aliceblue;
+    fill-opacity: .5;
+    cursor: pointer;
+}
+
+.moves path:hover {
+    fill-opacity: 1;
+}
+
+.moves used {
+    fill-opacity: 1;
+}
+
+.moves path.playerA {
+    fill: palevioletred;
+}
+
+.moves path.playerB {
+    fill: dodgerblue;
+}
+
+#hexagon {
+    fill: #eee;
+}
+
+#hexagon.game-over.playerA {
+    fill: palevioletred;
+}
+
+#hexagon.game-over.playerB {
+    fill: dodgerblue;
+}
+
+#popup {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    padding: 20px 50px;
+    width: 500px;
+    min-height: 50px;
+    font-size: 23px;
+    margin-left: -250px;
+    background: #fff;
+    color: #666;
+    text-align: center;
+    box-shadow: 4px 4px 7px rgba(0,0,0,.2);
+    border: 1px solid #eee;
+}
+button#restart-btn {
+    padding: 15px 40px;
+    font-size: 15px;
+    background: teal;
+    color: white;
+    margin: 19px;
+}
