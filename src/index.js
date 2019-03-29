@@ -80,6 +80,6 @@ io.on('connection', function(socket){
 });
 
 // Start the server and listen to the port
-http.listen(80, function(){
-  console.log('listening on *:80');
+http.listen(process.env.PORT || 8080, function(){
+  console.log('listening..');
 });
